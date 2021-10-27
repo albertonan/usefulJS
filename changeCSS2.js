@@ -5,6 +5,12 @@ var box = document.getElementsByClassName('box-section');
     box[i].style.backgroundColor = '#f7f7f7ab';
     box[i].style.backdropFilter = "blur(10px)";
   };
+  box = document.getElementsByClassName('main-content--themes');
+  for(let i = 0; i < box.length; i++) {
+    box[i].style.backgroundColor = '#f7f7f7ab';
+    box[i].style.backdropFilter = "blur(10px)";
+  };
+  main-content--themes
   var rsvp = document.getElementsByClassName('rsvp-event');
   for(let i = 0; i < rsvp.length; i++) {
     rsvp[i].style.backgroundColor = '#f7f7f7ab';
