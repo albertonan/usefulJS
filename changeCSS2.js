@@ -1,10 +1,18 @@
 window.addEventListener('load', function () {
   console.log("HACKED STYLES")
+   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 var box = document.getElementsByClassName('box-section');
-  for(let i = 0; i < box.length; i++) {
-    box[i].style.backgroundColor = '#f7f7f7ab';
-    box[i].style.backdropFilter = "blur(10px)";
-  };
+  if(width > 767){
+    for(let i = 0; i < box.length; i++) {
+      box[i].style.backgroundColor = '#f7f7f7ab';
+      box[i].style.backdropFilter = "blur(10px)";
+    };
+  } else {
+    for(let i = 0; i < box.length; i++) {
+      box[i].style.backgroundColor = '#f7f7f700';
+      box[i].style.backdropFilter = "blur(0px)";
+    };
+  }
   var phoneBox = document.getElementsByClassName('main-content--themes');
   for(let i = 0; i < phoneBox.length; i++) {
     phoneBox[i].style.backgroundColor = '#f7f7f7ab';
