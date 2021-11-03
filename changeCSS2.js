@@ -13,7 +13,7 @@ var box = document.getElementsByClassName('box-section');
       box[i].style.backdropFilter = "blur(0px)";
     };
   }
-  if(width > 767){
+  if(width <= 767){
     var phoneBox = document.getElementsByClassName('main-content--themes');
     for(let i = 0; i < phoneBox.length; i++) {
       phoneBox[i].style.backgroundColor = '#f7f7f7ab';
