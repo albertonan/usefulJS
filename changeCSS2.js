@@ -13,11 +13,13 @@ var box = document.getElementsByClassName('box-section');
       box[i].style.backdropFilter = "blur(0px)";
     };
   }
-  var phoneBox = document.getElementsByClassName('main-content--themes');
-  for(let i = 0; i < phoneBox.length; i++) {
-    phoneBox[i].style.backgroundColor = '#f7f7f7ab';
-    phoneBox[i].style.backdropFilter = "blur(10px)";
-  };
+  if(width > 767){
+    var phoneBox = document.getElementsByClassName('main-content--themes');
+    for(let i = 0; i < phoneBox.length; i++) {
+      phoneBox[i].style.backgroundColor = '#f7f7f7ab';
+      phoneBox[i].style.backdropFilter = "blur(10px)";
+    };
+  }
   var rsvp = document.getElementsByClassName('rsvp-event');
   for(let i = 0; i < rsvp.length; i++) {
     rsvp[i].style.backgroundColor = '#f7f7f7ab';
